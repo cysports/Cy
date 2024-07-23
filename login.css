@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(175deg, #000b30, #015affde);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-signin {
+    background: rgb(4, 201, 207);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-signin .btn {
+    background-color: #00c3ff;
+    border: none;
+}
+
+.form-floating label {
+    color: #120150;
+}
+
+.form-floating input {
+    border-radius: 5px;
+}
+
+.form-check-label {
+    color: #444343;
+}
+
+.register-link {
+    color: #033805;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(175deg, #042fbb, #3b90ff);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-signin {
+    background: rgb(0, 174, 255);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(3, 18, 151, 0.1);
+}
+
+.form-signin .btn {
+    background-color: #002fff;
+    border: none;
+}
+
+.form-floating label {
+    color: #000000;
+}
+
+.form-floating input {
+    border-radius: 5px;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
