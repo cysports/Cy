@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Register</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/Registro.css">
+</head>
+
+<body>
+    <main class="form-signin">
+        <form id="registerForm">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhCe35vQT89XBTv0yEHbsJT5SNPEKyvxB4xw&s" alt="">
+
+            <h1 class="h3 mb-3 fw-normal">Cadastre-se</h1>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingName" placeholder="Digite seu nome" required>
+                <label for="floatingName">Nome</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingRegisterEmail" placeholder="Lucena@example.com" required>
+                <label for="floatingRegisterEmail">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingRegisterPassword" placeholder="Senha" required>
+                <label for="floatingRegisterPassword">Senha</label>
+            </div>
+            <button class="btn btn-primary w-100 py-2" type="submit">Registrar</button>
+            <p class="mt-3 mb-3 text-body-secondary text-center">Já tem uma Conta? <a href="login.html" class="login-link">Sign in here</a></p>
+            <p class="mt-3 mb-3 text-body-secondary text-center"><a href="index.html" class="login-link">Continuar sem conta</a></p>
+        </form>
+    </main>
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('floatingName').value;
+            var email = document.getElementById('floatingRegisterEmail').value;
+            var password = document.getElementById('floatingRegisterPassword').value;
+
+            // Aqui você pode adicionar a lógica para registrar o usuário, por exemplo, uma chamada AJAX para o servidor
+
+            // Simulando registro bem-sucedido e redirecionando para a página de login
+            alert('Registration successful!');
+            window.location.href = 'login.html';
+        });
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
